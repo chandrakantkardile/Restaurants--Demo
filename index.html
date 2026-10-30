@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>स्वामी समर्थ हॉटेल | Swami Samarth Hotel</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700;800&family=Noto+Serif+Devanagari:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={theme:{extend:{colors:{maroon:'#5a1a12',spice:'#c2410c',gold:'#f4b942',cream:'#fffaf1'}}}}</script>
+<style>
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:7rem}
+body{background:#fffaf1 radial-gradient(circle at 1px 1px,rgba(194,65,12,.07) 1px,transparent 0) 0 0/22px 22px;color:#2b1a14;font-family:'Poppins','Noto Sans Devanagari',sans-serif;overflow-x:hidden}
+html[lang=mr] h1,html[lang=mr] h2,html[lang=mr] h3{line-height:1.4}
+h1,h2{font-family:'Playfair Display','Noto Serif Devanagari',serif}
+.card{background:#fff;border:1px solid #f3dfc8;border-radius:1.5rem;box-shadow:0 4px 14px -6px rgba(90,26,18,.15);transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 34px -14px rgba(90,26,18,.35);border-color:#fb923c}
+.cat.on{background:linear-gradient(135deg,#5a1a12,#c2410c);color:#fff;box-shadow:inset 4px 0 0 #f4b942}
+.dot{width:14px;height:14px;border:2px solid;display:inline-flex;align-items:center;justify-content:center;border-radius:3px;background:#fff}
+.dot::after{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+@media(max-width:640px){input,textarea,select{font-size:16px!important}}
+@media print{body>*:not(#bm){display:none!important}#bm{position:static!important;background:#fff!important;display:block!important}.no-print{display:none!important}}
+</style>
+</head>
+<body>
+<div class="bg-maroon text-cream text-xs py-2 px-4"><div class="max-w-6xl mx-auto flex flex-wrap justify-between gap-2"><span>🕘 <span data-i="hours"></span></span><a href="tel:+919960842249" class="font-semibold">📞 +91 99608 42249</a></div></div>
+
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-orange-900/10">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-2">
+    <a href="#home" class="flex items-center gap-2 min-w-0">
+      <span class="w-10 h-10 shrink-0 rounded-xl bg-spice text-gold flex items-center justify-center text-xl">🍽️</span>
+      <span class="leading-tight min-w-0"><span class="block font-bold text-maroon text-[13px] sm:text-base" data-i="shop"></span><span class="block text-[10px] sm:text-[11px] text-spice" data-i="tag"></span></span>
+    </a>
+    <nav class="hidden lg:flex gap-6 text-sm font-semibold text-gray-700"><a href="#home" data-i="n1"></a><a href="#menu" data-i="n2"></a><a href="#why" data-i="n3"></a><a href="#visit" data-i="n4"></a></nav>
+    <div class="flex items-center gap-2">
+      <div class="flex rounded-full border border-spice overflow-hidden text-xs font-bold"><button id="b-mr" onclick="setLang('mr')" class="px-2.5 py-1.5">मराठी</button><button id="b-en" onclick="setLang('en')" class="px-2.5 py-1.5">EN</button></div>
+      <button onclick="drawer(1);tab(1)" class="relative w-10 h-10 rounded-xl bg-orange-50 text-xl" aria-label="Orders">📋<span id='ob' class='absolute -top-1 -right-1 min-w-5 h-5 px-1 rounded-full bg-maroon text-white text-[11px] font-bold hidden items-center justify-center'></span></button>
+      <button onclick="drawer(1)" class="relative w-10 h-10 rounded-xl bg-orange-50 text-xl" aria-label="Cart">🛒<span id="bdg" class="absolute -top-1 -right-1 min-w-5 h-5 px-1 rounded-full bg-spice text-white text-[11px] font-bold hidden items-center justify-center"></span></button>
+    </div>
+  </div>
+</header>
+<nav class='lg:hidden sticky top-16 z-30 bg-white/95 border-b flex gap-2 overflow-x-auto px-3 py-2 text-xs font-bold text-maroon'><a href='#home' class='px-3 py-1.5 rounded-full bg-orange-50 whitespace-nowrap' data-i='n1'></a><a href='#menu' class='px-3 py-1.5 rounded-full bg-orange-50 whitespace-nowrap' data-i='n2'></a><a href='#why' class='px-3 py-1.5 rounded-full bg-orange-50 whitespace-nowrap' data-i='n3'></a><a href='#visit' class='px-3 py-1.5 rounded-full bg-orange-50 whitespace-nowrap' data-i='n4'></a></nav>
+
+<main>
+<section id="home" class="text-white" style="background:radial-gradient(circle at 85% 15%,rgba(244,185,66,.35),transparent 40%),radial-gradient(circle at 10% 90%,rgba(251,146,60,.3),transparent 45%),linear-gradient(135deg,#3b0f0a,#7c2d12 60%,#c2410c)">
+  <div class="max-w-6xl mx-auto px-4 py-10 sm:py-14 lg:py-20 grid lg:grid-cols-2 gap-8 items-center">
+    <div class="space-y-5">
+      <span class="inline-block text-xs font-bold bg-white/15 border border-white/20 rounded-full px-3 py-1" data-i="badge"></span>
+      <h1 class="text-[1.65rem] sm:text-4xl lg:text-5xl font-bold break-words" data-i="h1"></h1>
+      <p class="text-white/85 max-w-xl" data-i="hp"></p>
+      <div class="flex flex-wrap gap-3"><a href="#menu" class="bg-gold text-maroon font-bold text-sm px-5 py-3 rounded-xl" data-i="order"></a><a href="tel:+919960842249" class="bg-white/15 border border-white/30 font-bold text-sm px-5 py-3 rounded-xl">📞 <span data-i="call"></span></a></div>
+    </div>
+    <div class="bg-white/10 backdrop-blur border border-white/25 rounded-3xl p-6 shadow-2xl">
+      <div class="grid grid-cols-4 gap-3 text-4xl sm:text-5xl text-center"><span>🍛</span><span>🍲</span><span>🍗</span><span>🫓</span><span>🍚</span><span>🥪</span><span>☕</span><span>🍮</span></div>
+      <div class="grid grid-cols-2 gap-3 text-sm mt-5"><div class="bg-white/10 rounded-xl p-3">✅ <span data-i="t1"></span></div><div class="bg-white/10 rounded-xl p-3">🥗 <span data-i="t2"></span></div><div class="bg-white/10 rounded-xl p-3">🛵 <span data-i="t3"></span></div><div class="bg-white/10 rounded-xl p-3">🍽️ <span data-i="t4"></span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="max-w-6xl mx-auto px-4 py-14">
+  <div class="text-center max-w-2xl mx-auto mb-8"><h2 class="text-2xl sm:text-3xl font-bold text-maroon" data-i="mh"></h2><div class="w-16 h-1 bg-gold rounded-full mx-auto mt-3"></div><p class="text-sm text-gray-600 mt-3" data-i="mp"></p></div>
+  <div class="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[260px_minmax(0,1fr)] gap-6 items-start">
+    <aside class="order-1 min-w-0 lg:sticky lg:top-24 card p-4 space-y-3 border-t-4 border-t-gold">
+      <input oninput="Q=this.value.toLowerCase();render()" data-ph="search" class="w-full text-sm border border-orange-100 rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-spice bg-cream">
+      <div class="flex gap-2 text-xs font-bold"><button id="vf0" onclick="VEG=0;render()" class="flex-1 py-1.5 rounded-lg border"></button><button id="vf1" onclick="VEG=1;render()" class="flex-1 py-1.5 rounded-lg border"></button></div>
+      <div id="cats" class="flex lg:flex-col gap-2 overflow-x-auto pb-2 -mx-1 px-1 lg:mx-0 lg:px-0 lg:pb-0"></div>
+    </aside>
+    <div class="order-2 min-w-0"><div id="grid" class="grid sm:grid-cols-2 xl:grid-cols-3 gap-5"></div><p id="empty" class="hidden text-center text-gray-500 py-10" data-i="empty"></p></div>
+  </div>
+</section>
+
+<section id="why" class="bg-orange-50/70 border-y border-orange-900/10 py-14"><div class="max-w-6xl mx-auto px-4">
+  <h2 class="text-2xl sm:text-3xl font-bold text-maroon text-center mb-8" data-i="wh"></h2>
+  <div class="grid sm:grid-cols-3 gap-5" id="whyg"></div>
+</div></section>
+
+<section id="visit" class="bg-maroon text-white py-14"><div class="max-w-4xl mx-auto px-4 text-center space-y-5">
+  <h2 class="text-2xl sm:text-3xl font-bold" data-i="vh"></h2>
+  <div class="grid sm:grid-cols-3 gap-4 text-sm">
+    <div class="bg-white/10 rounded-2xl p-5"><div class="text-2xl">📍</div><p class="font-bold mt-1" data-i="l1"></p><p class="text-white/80 mt-1" data-i="addr"></p></div>
+    <div class="bg-white/10 rounded-2xl p-5"><div class="text-2xl">🕘</div><p class="font-bold mt-1" data-i="l2"></p><p class="text-white/80 mt-1" data-i="hours"></p></div>
+    <div class="bg-white/10 rounded-2xl p-5"><div class="text-2xl">📞</div><p class="font-bold mt-1" data-i="l3"></p><p class="text-white/80 mt-1">+91 99608 42249</p></div>
+  </div>
+  <div class='flex flex-wrap justify-center gap-3'><a href='https://www.google.com/maps/search/?api=1&query=Georai+Newasa+Maharashtra' target='_blank' rel='noopener' class='bg-gold text-maroon font-bold px-6 py-3 rounded-xl text-sm'>🧭 <span data-i='dir'></span></a><a href='https://wa.me/919960842249?text=Namaskar%20Swami%20Samarth%20Hotel' target='_blank' rel='noopener' class='bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl text-sm'>💬 <span data-i='chat'></span></a></div>
+</div></section>
+</main>
+
+<footer class="bg-[#2b0d09] text-cream/80 text-sm pb-20 sm:pb-0"><div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row justify-between gap-3 text-xs"><p class="font-bold text-white text-sm" data-i="shop"></p><p data-i="addr"></p><p>© 2026 <span data-i='shop'></span> • <button onclick='own(1)' class='text-gold underline' data-i='own'></button></p></div></footer>
+
+<div id='bm' class='fixed inset-0 z-[60] bg-black/60 hidden items-center justify-center p-4'><div id='bill' class='bg-white rounded-2xl w-full max-w-sm max-h-[90vh] overflow-y-auto p-5'></div></div>
+<div id='own' class='fixed inset-0 z-[60] bg-black/60 hidden items-center justify-center p-3'><div class='bg-cream rounded-3xl w-full max-w-2xl max-h-[90vh] flex flex-col overflow-hidden'>
+<div class='bg-maroon text-white p-4 flex justify-between items-center'><h3 class='font-bold' data-i='own'></h3><button onclick='own(0)' class='w-8 h-8 rounded-full bg-white/15'>✕</button></div>
+<div id='pg' class='p-6 text-center space-y-3'><p class='text-sm text-gray-600'>Enter PIN (demo PIN: 1234)</p><input id='pin' type='password' inputmode='numeric' class='border rounded-xl px-4 py-3 text-center w-40'><br><button onclick='unlock()' class='bg-spice text-white font-bold rounded-xl px-6 py-2.5 text-sm'>Open</button><p id='pe' class='text-xs text-red-600'></p></div>
+<div id='pw' class='hidden flex-col flex-1 min-h-0'><div id='os' class='grid grid-cols-3 gap-2 p-3 text-center text-xs'></div><div id='ol' class='flex-1 overflow-y-auto p-3 space-y-2'></div><p class='text-[11px] text-gray-500 text-center p-2'>Demo: orders are saved in this browser. A real version syncs to every phone.</p></div></div></div>
+<!-- floating cart bar -->
+<button id="bar" onclick="drawer(1)" class="hidden fixed left-4 right-4 bottom-4 z-40 sm:left-auto sm:w-80 bg-spice text-white font-bold rounded-2xl px-5 py-3.5 shadow-2xl justify-between items-center" style="margin-bottom:env(safe-area-inset-bottom,0px)"><span id="barn"></span><span id="bart"></span></button>
+
+<!-- cart drawer -->
+<div id="ov" class="fixed inset-0 bg-black/50 z-50 hidden" onclick="drawer(0)"></div>
+<aside id="dr" class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white z-50 translate-x-full transition-transform duration-300 flex flex-col">
+  <div class="p-4 flex items-center justify-between border-b"><h3 class="font-bold text-maroon" data-i="yo"></h3><button onclick="drawer(0)" class="w-9 h-9 rounded-full bg-gray-100 text-lg" aria-label="Close">✕</button></div>
+  <div class='grid grid-cols-2 text-sm font-bold border-b'><button id='tc' onclick='tab(0)' data-i='tc'></button><button id='to' onclick='tab(1)' data-i='to'></button></div>
+  <div id='cv' class="flex-1 overflow-y-auto p-4 space-y-4">
+    <div id="ci" class="space-y-3"></div>
+    <div id="done" class="hidden bg-green-50 border border-green-200 text-green-900 rounded-2xl p-4 text-sm"></div>
+    <form id="of" onsubmit="place(event)" class="space-y-3 hidden">
+      <select id="ot" onchange="otype()" class="w-full border border-orange-100 rounded-xl px-3 py-3 text-sm bg-cream"></select>
+      <input id="on" required class="w-full border border-orange-100 rounded-xl px-3 py-3 text-sm bg-cream" data-ph="f_name">
+      <input id="op" required pattern="[0-9]{10}" inputmode="numeric" class="w-full border border-orange-100 rounded-xl px-3 py-3 text-sm bg-cream" data-ph="f_phone">
+      <input id="oa" class="w-full border border-orange-100 rounded-xl px-3 py-3 text-sm bg-cream">
+      <button class="w-full bg-spice hover:bg-maroon text-white font-bold rounded-xl py-3.5 text-sm">💬 <span data-i="place"></span> • <span id="ft"></span></button>
+      <p class="text-[11px] text-gray-500 text-center" data-i="note"></p>
+    </form>
+  </div>
+  <div id='orv' class='hidden flex-1 overflow-y-auto p-4 space-y-3'></div>
+</aside>
+
+<script>
+const PH="919960842249";
+const T={
+mr:{shop:"स्वामी समर्थ हॉटेल",tag:"शुद्ध शाकाहारी व मांसाहारी • फॅमिली रेस्टॉरंट",hours:"दररोज सकाळी ८ ते रात्री ११",n1:"मुख्यपृष्ठ",n2:"मेनू",n3:"वैशिष्ट्ये",n4:"भेट द्या",
+badge:"घरगुती चव • ताजे जेवण",h1:"स्वामी समर्थ हॉटेल — चवीला घरच्यासारखे जेवण.",hp:"महाराष्ट्रीयन थाळी, मिसळ-पाव, बिर्याणी, तंदूर व बरेच काही. मेनूमधून निवडा आणि एका क्लिकवर ऑर्डर करा.",order:"ऑर्डर करा",call:"फोन करा",
+t1:"ताजे साहित्य",t2:"शाकाहारी / मांसाहारी",t3:"होम डिलिव्हरी",t4:"फॅमिली बसण्याची सोय",
+mh:"आमचा मेनू",mp:"आवडते पदार्थ निवडा, कार्टमध्ये टाका आणि व्हॉट्सअ‍ॅपवर ऑर्डर पाठवा.",search:"पदार्थ शोधा (उदा. मिसळ)",empty:"काहीही सापडले नाही.",
+add:"+ जोडा",all:"सर्व पदार्थ",veg:"🟢 शाकाहारी",nv:"🔴 मांसाहारी",pop:"लोकप्रिय",
+wh:"आमची वैशिष्ट्ये",vh:"आम्हाला भेट द्या",l1:"पत्ता",l2:"वेळ",l3:"फोन",addr:"मु. पो. गेवराई, ता. नेवासा, जि. अहिल्यानगर, महाराष्ट्र",dir:"गुगल मॅपवर पहा",
+yo:"तुमची ऑर्डर",ecart:"कार्ट रिकामे आहे. मेनूमधून पदार्थ निवडा.",place:"ऑर्डर पाठवा",note:"ऑर्डर व्हॉट्सअ‍ॅपवर हॉटेलला जाईल. किंमतीत कर वेगळा असू शकतो.",
+f_name:"तुमचे नाव *",f_phone:"मोबाईल नंबर (१० अंकी) *",ot:["डाइन-इन (हॉटेलमध्ये)","टेकअवे (घेऊन जाणे)","होम डिलिव्हरी"],oa:["टेबल नंबर (असल्यास)","येण्याची अंदाजे वेळ","डिलिव्हरी पत्ता *"],
+ok:"ऑर्डर तयार! व्हॉट्सअ‍ॅप उघडले आहे. तेथे “Send” दाबा म्हणजे ऑर्डर हॉटेलला पोहोचेल. ऑर्डर क्र.:",
+C:{all:"सर्व पदार्थ",snack:"नाश्ता व स्नॅक्स",start:"स्टार्टर्स",main:"मुख्य जेवण",bread:"भाकरी व भात",drink:"पेये",dess:"गोड पदार्थ"},
+why:[["🌶️","घरगुती मसाले","रोज ताजे वाटलेले मसाले आणि स्वच्छ साहित्य."],["👨‍👩‍👧","फॅमिली रेस्टॉरंट","कुटुंबासह आरामात बसून जेवण्याची सोय."],["🛵","जलद ऑर्डर","मोबाईलवरून ऑर्डर करा, गरम जेवण मिळवा."]]},
+en:{shop:"Swami Samarth Hotel",tag:"Pure Veg & Non-Veg • Family Restaurant",hours:"Daily, 8:00 AM – 11:00 PM",n1:"Home",n2:"Menu",n3:"Why Us",n4:"Visit",
+badge:"Homestyle taste • Freshly cooked",h1:"Swami Samarth Hotel — food that tastes like home.",hp:"Maharashtrian thali, misal pav, biryani, tandoor and more. Pick from the menu and order in one tap.",order:"Order Now",call:"Call Us",
+t1:"Fresh ingredients",t2:"Veg / Non-veg",t3:"Home delivery",t4:"Family seating",
+mh:"Our Menu",mp:"Choose your favourites, add to cart and send the order on WhatsApp.",search:"Search dishes (e.g. misal)",empty:"Nothing found.",
+add:"+ Add",all:"All Items",veg:"🟢 Veg",nv:"🔴 Non-veg",pop:"Popular",
+wh:"Why Choose Us",vh:"Visit Us",l1:"Address",l2:"Timings",l3:"Phone",addr:"At Post Georai, Tal. Newasa, Dist. Ahilyanagar, Maharashtra",dir:"View on Google Maps",
+yo:"Your Order",ecart:"Your cart is empty. Pick dishes from the menu.",place:"Place Order",note:"Order is sent to the hotel on WhatsApp. Taxes may be extra.",
+f_name:"Your name *",f_phone:"Mobile number (10 digits) *",ot:["Dine-in","Takeaway","Home Delivery"],oa:["Table number (optional)","Expected arrival time","Delivery address *"],
+ok:"Order ready! WhatsApp has opened. Tap “Send” there so the hotel receives it. Order no.:",
+C:{all:"All Items",snack:"Breakfast & Snacks",start:"Starters",main:"Main Course",bread:"Breads & Rice",drink:"Beverages",dess:"Desserts"},
+why:[["🌶️","Homemade Masalas","Freshly ground spices and clean ingredients every day."],["👨‍👩‍👧","Family Restaurant","Comfortable seating for the whole family."],["🛵","Quick Ordering","Order from your phone and get hot food fast."]]}
+};
+// [cat, emoji, en, mr, price, veg, popular]
+const M=[
+["snack","🥪","Vada Pav","वडा पाव",25,1,1],["snack","🍲","Misal Pav","मिसळ पाव",90,1,1],["snack","🍳","Kanda Poha","कांदा पोहे",50,1,0],["snack","🥣","Sabudana Khichdi","साबुदाणा खिचडी",60,1,0],
+["start","🧀","Paneer Tikka","पनीर टिक्का",220,1,1],["start","🥡","Veg Manchurian","व्हेज मंचुरियन",160,1,0],["start","🍗","Chicken Tikka","चिकन टिक्का",260,0,1],["start","🍤","Chicken 65","चिकन ६५",240,0,0],
+["main","🍛","Paneer Butter Masala","पनीर बटर मसाला",240,1,1],["main","🥘","Dal Tadka","दाल तडका",150,1,0],["main","🌶️","Veg Kolhapuri","व्हेज कोल्हापुरी",190,1,0],["main","🍱","Maharashtrian Thali","महाराष्ट्रीयन थाळी",180,1,1],["main","🍗","Chicken Kolhapuri","चिकन कोल्हापुरी",280,0,1],["main","🍱","Chicken Thali","चिकन थाळी",260,0,0],
+["bread","🫓","Butter Naan","बटर नान",40,1,0],["bread","🫓","Jowar Bhakri","ज्वारी भाकरी",30,1,0],["bread","🍚","Jeera Rice","जिरा राईस",120,1,0],["bread","🍚","Veg Biryani","व्हेज बिर्याणी",180,1,0],["bread","🍚","Chicken Biryani","चिकन बिर्याणी",250,0,1],
+["drink","☕","Masala Chai","मसाला चहा",20,1,1],["drink","🧋","Cold Coffee","कोल्ड कॉफी",80,1,0],["drink","🥛","Sweet Lassi","गोड लस्सी",60,1,0],["drink","🍋","Fresh Lime Soda","फ्रेश लिंबू सोडा",50,1,0],
+["dess","🍮","Gulab Jamun","गुलाब जामुन",50,1,0],["dess","🫓","Puran Poli","पुरणपोळी",60,1,1],["dess","🍨","Ice Cream","आईस्क्रीम",70,1,0]
+];
+let L="mr",CAT="all",Q="",VEG=-1,C={};
+const $=s=>document.querySelector(s),t=k=>T[L][k],rs=n=>"₹"+n;
+const wa=x=>`https://wa.me/${PH}?text=${encodeURIComponent(x)}`;
+function save(){try{localStorage.setItem("ss_cart",JSON.stringify(C))}catch(e){}}
+function applyText(){
+  document.documentElement.lang=L;
+  document.querySelectorAll("[data-i]").forEach(e=>e.textContent=t(e.dataset.i));
+  document.querySelectorAll("[data-ph]").forEach(e=>e.placeholder=t(e.dataset.ph));
+  $("#b-mr").className="px-2.5 py-1.5 "+(L==="mr"?"bg-spice text-white":"text-spice");
+  $("#b-en").className="px-2.5 py-1.5 "+(L==="en"?"bg-spice text-white":"text-spice");
+  $("#ot").innerHTML=t("ot").map((x,i)=>`<option value="${i}">${x}</option>`).join("");
+  otype();
+  $("#whyg").innerHTML=t("why").map(x=>`<div class="card p-6 text-center"><div class="text-4xl mb-2">${x[0]}</div><h3 class="font-bold text-maroon mb-1">${x[1]}</h3><p class="text-xs text-gray-600">${x[2]}</p></div>`).join("");
+  document.title=t("shop");
+}
+function otype(){const i=+$("#ot").value;$("#oa").placeholder=t("oa")[i];$("#oa").required=i===2}
+function render(){
+  const ids=["all","snack","start","main","bread","drink","dess"];
+  $("#cats").innerHTML=ids.map(id=>{const n=id==="all"?M.length:M.filter(m=>m[0]===id).length;return `<button onclick="CAT='${id}';render()" class="cat ${CAT===id?"on":"bg-orange-50 text-maroon"} whitespace-nowrap flex justify-between items-center gap-3 px-3.5 py-2 rounded-xl text-sm font-semibold"><span>${T[L].C[id]}</span><span class="text-xs opacity-70">${n}</span></button>`}).join("");
+  $("#vf0").textContent=t("veg");$("#vf1").textContent=t("nv");
+  [0,1].forEach(i=>$("#vf"+i).className="flex-1 py-1.5 rounded-lg border "+((VEG===(i?0:1))?"bg-maroon text-white border-maroon":"border-orange-200 text-maroon"));
+  const list=M.map((m,i)=>[m,i]).filter(([m])=>(CAT==="all"||m[0]===CAT)&&(VEG<0||m[5]===VEG)&&(!Q||(m[2]+m[3]).toLowerCase().includes(Q)));
+  $("#empty").classList.toggle("hidden",list.length>0);
+  $("#grid").innerHTML=list.map(([m,i])=>{const q=C[i]||0;
+    return `<article class="card overflow-hidden flex flex-col">
+    <div class="h-32 bg-gradient-to-br from-amber-100 via-orange-50 to-rose-100 flex items-center justify-center text-6xl relative"><span class="drop-shadow-lg">${m[1]}</span>
+      <span class="absolute top-3 left-3 ${m[5]?"text-green-600":"text-red-600"} dot"></span>
+      ${m[6]?`<span class="absolute top-3 right-3 text-[10px] font-bold bg-gold text-maroon rounded-full px-2.5 py-1">★ ${t("pop")}</span>`:""}</div>
+    <div class="p-4 flex-1 flex flex-col gap-1">
+      <h3 class="font-bold text-maroon">${L==="mr"?m[3]:m[2]}</h3><p class="text-[11px] text-spice">${L==="mr"?m[2]:m[3]}</p>
+      <div class="mt-auto pt-3 flex items-center justify-between"><span class="font-bold text-lg text-maroon">${rs(m[4])}</span>
+      ${q?`<div class="flex items-center gap-2 bg-spice text-white rounded-xl font-bold"><button onclick="add(${i},-1)" class="w-9 h-9" aria-label="Minus">−</button><span class="w-5 text-center">${q}</span><button onclick="add(${i},1)" class="w-9 h-9" aria-label="Plus">+</button></div>`
+      :`<button onclick="add(${i},1)" class="bg-orange-50 hover:bg-spice hover:text-white text-spice border border-spice font-bold text-sm px-4 py-2 rounded-xl">${t("add")}</button>`}</div>
+    </div></article>`}).join("");
+  cartUI();
+}
+function add(i,d){C[i]=(C[i]||0)+d;if(C[i]<=0)delete C[i];$("#done").classList.add("hidden");save();render()}
+function total(){return Object.entries(C).reduce((s,[i,q])=>s+M[i][4]*q,0)}
+function count(){return Object.values(C).reduce((s,q)=>s+q,0)}
+function cartUI(){
+  const n=count(),tt=total();
+  const b=$("#bdg");b.textContent=n;b.classList.toggle("hidden",!n);b.classList.toggle("flex",!!n);
+  const bar=$("#bar");bar.classList.toggle("hidden",!n);bar.classList.toggle("flex",!!n);
+  $("#barn").textContent="🛒 "+n+" • "+t("yo");$("#bart").textContent=rs(tt);$("#ft").textContent=rs(tt);
+  $("#ci").innerHTML=n?Object.entries(C).map(([i,q])=>{const m=M[i];return `<div class="flex items-center gap-3 border-b border-orange-50 pb-3"><span class="text-3xl">${m[1]}</span><div class="flex-1 min-w-0"><p class="font-semibold text-sm text-maroon truncate">${L==="mr"?m[3]:m[2]}</p><p class="text-xs text-gray-500">${rs(m[4])} × ${q} = <b>${rs(m[4]*q)}</b></p></div><div class="flex items-center gap-2 bg-orange-50 text-spice rounded-lg font-bold"><button onclick="add(${i},-1)" class="w-8 h-8">−</button><span>${q}</span><button onclick="add(${i},1)" class="w-8 h-8">+</button></div></div>`}).join("")+`<div class='text-sm space-y-1 pt-1'><div class='flex justify-between'><span>${t('sub')}</span><span>${rs(calc(cartItems()).s)}</span></div><div class='flex justify-between'><span>${t('gst')}</span><span>${rs(calc(cartItems()).g)}</span></div><div class='flex justify-between font-bold text-maroon text-base'><span>${t('tot')}</span><span>${rs(tt)}</span></div></div>`
+  :`<p class="text-sm text-gray-500 text-center py-8">${t("ecart")}</p>`;
+  $("#of").classList.toggle("hidden",!n);
+}
+function drawer(o){$("#dr").classList.toggle("translate-x-full",!o);$("#ov").classList.toggle("hidden",!o)}
+function place(e){
+  e.preventDefault();if(!count())return;
+  const id="SS"+Math.floor(1000+Math.random()*9000),ty=T.en.ot[+$("#ot").value];
+  const lines=Object.entries(C).map(([i,q])=>`${q} x ${M[i][2]} - ${rs(M[i][4]*q)}`).join("\n");
+  const msg=`*New Order - Swami Samarth Hotel*\nOrder ID: #${id}\nType: ${ty}\nName: ${$("#on").value}\nPhone: ${$("#op").value}\n${T.en.oa[+$("#ot").value].replace(" *","")}: ${$("#oa").value||"-"}\n-----------------\n${lines}\n-----------------\n*Total: ${rs(total())}*`;
+  window.open(wa(msg),"_blank");
+  C={};save();render();
+  const d=$("#done");d.textContent=t("ok")+" #"+id;d.classList.remove("hidden");$("#of").reset();
+}
+function setLang(l){L=l;try{localStorage.setItem("ss_lang",l)}catch(e){}applyText();render();renderOrders()}
+try{const s=localStorage.getItem("ss_lang");if(s==="en"||s==="mr")L=s;const c=JSON.parse(localStorage.getItem("ss_cart")||"{}");Object.keys(c).forEach(k=>{if(M[k]&&c[k]>0)C[k]=c[k]})}catch(e){}
+Object.assign(T.mr,{tc:'🛒 कार्ट',to:'📋 माझ्या ऑर्डर',pend:'चालू / प्रलंबित ऑर्डर',dn:'पूर्ण ऑर्डर',st:{pending:'प्रलंबित',prep:'तयार होत आहे',done:'पूर्ण',cancel:'रद्द'},noo:'अजून कोणतीही ऑर्डर नाही.',bl:'बिल',cx:'रद्द करा',sub:'उप-एकूण',gst:'GST (५%)',tot:'एकूण',own:'🔐 मालक पॅनेल',chat:'WhatsApp वर चॅट करा'});
+Object.assign(T.en,{tc:'🛒 Cart',to:'📋 My Orders',pend:'Active / Pending Orders',dn:'Completed Orders',st:{pending:'Pending',prep:'Preparing',done:'Completed',cancel:'Cancelled'},noo:'No orders yet.',bl:'Bill',cx:'Cancel',sub:'Subtotal',gst:'GST (5%)',tot:'Total',own:'🔐 Owner Panel',chat:'Chat on WhatsApp'});
+let O=[],FL='',OKP=false;const ST=['pending','prep','done','cancel'],NL=String.fromCharCode(10);
+try{O=JSON.parse(localStorage.getItem('ss_orders')||'[]')}catch(e){}
+const sv=()=>{try{localStorage.setItem('ss_orders',JSON.stringify(O))}catch(e){}};
+function calc(a){const s=a.reduce((x,i)=>x+i.p*i.q,0),g=Math.round(s*0.05);return{s:s,g:g,t:s+g}}
+function cartItems(){return Object.entries(C).map(([i,q])=>({n:M[i][2],m:M[i][3],p:M[i][4],q:q}))}
+function total(){return calc(cartItems()).t}
+function drawer(o){$('#dr').classList.toggle('translate-x-full',!o);$('#ov').classList.toggle('hidden',!o);if(o)tab(0);else FL=''}
+function tab(n){$('#cv').classList.toggle('hidden',!!n);$('#orv').classList.toggle('hidden',!n);$('#tc').className='py-3 '+(n?'text-gray-500':'text-spice border-b-2 border-spice');$('#to').className='py-3 '+(n?'text-spice border-b-2 border-spice':'text-gray-500');if(n)renderOrders()}
+function msgOf(o){return ['*Order - Swami Samarth Hotel*','Order ID: #SS'+o.id,'Type: '+T.en.ot[o.ty],'Name: '+o.nm,'Phone: '+o.ph,T.en.oa[o.ty].replace(' *','')+': '+(o.ad||'-'),'-----------------'].concat(o.it.map(i=>i.q+' x '+i.n+' - '+rs(i.p*i.q)),['-----------------','Subtotal: '+rs(o.s),'GST 5%: '+rs(o.g),'*Total: '+rs(o.t)+'*']).join(NL)}
+function place(e){e.preventDefault();if(!count())return;const it=cartItems(),b=calc(it),id=Number(String(Date.now()).slice(-6));
+const o={id:id,ts:Date.now(),ty:+$('#ot').value,nm:$('#on').value,ph:$('#op').value,ad:$('#oa').value,it:it,s:b.s,g:b.g,t:b.t,st:'pending'};
+O.unshift(o);sv();window.open(wa(msgOf(o)),'_blank');C={};save();$('#of').reset();FL=t('ok')+' #SS'+id;render();tab(1)}
+const bt=(c,f,l)=>`<button onclick='${f}' class='px-2.5 py-1.5 rounded-lg ${c}'>${l}</button>`;
+const stC={pending:'bg-amber-100 text-amber-800',prep:'bg-blue-100 text-blue-800',done:'bg-green-100 text-green-800',cancel:'bg-gray-200 text-gray-600'};
+function ordCard(o,own){const names=o.it.map(i=>i.q+'× '+(L==='mr'?i.m:i.n)).join(', ');
+let b=bt('bg-orange-50 text-spice','showBill('+o.id+')',t('bl'));
+if(own){if(o.st==='pending')b+=bt('bg-blue-600 text-white','setSt('+o.id+',1)','Start Preparing');if(o.st==='pending'||o.st==='prep')b+=bt('bg-green-600 text-white','setSt('+o.id+',2)','Mark Completed');b+=bt('bg-red-50 text-red-600','delO('+o.id+')','Delete')}
+else if(o.st==='pending')b+=bt('bg-red-50 text-red-600','setSt('+o.id+',3)',t('cx'));
+return `<div class='border border-orange-100 rounded-2xl p-3 text-xs space-y-1.5 bg-white'><div class='flex justify-between items-center'><b class='text-maroon text-sm'>#SS${o.id}</b><span class='px-2 py-0.5 rounded-full font-bold ${stC[o.st]}'>${t('st')[o.st]}</span></div><p class='text-gray-500'>${new Date(o.ts).toLocaleString('en-IN',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})} • ${t('ot')[o.ty]}${own?' • '+o.nm+' '+o.ph:''}</p><p>${names}</p><div class='flex justify-between items-center pt-1 gap-2'><b class='text-maroon text-sm'>${rs(o.t)}</b><div class='flex flex-wrap justify-end gap-1.5 font-bold'>${b}</div></div></div>`}
+const sec=(h,a)=>a.length?`<h4 class='font-bold text-maroon text-sm pt-1'>${h} (${a.length})</h4>`+a.map(o=>ordCard(o,0)).join(''):'';
+function renderOrders(){const a=O.filter(o=>o.st==='pending'||o.st==='prep'),d=O.filter(o=>o.st==='done'||o.st==='cancel');
+$('#orv').innerHTML=(FL?`<div class='bg-green-50 border border-green-200 text-green-900 rounded-2xl p-3 text-xs'>${FL}</div>`:'')+(O.length?sec(t('pend'),a)+sec(t('dn'),d):`<p class='text-sm text-gray-500 text-center py-8'>${t('noo')}</p>`)}
+function ordBadge(){const n=O.filter(o=>o.st==='pending'||o.st==='prep').length,b=$('#ob');b.textContent=n;b.classList.toggle('hidden',!n);b.classList.toggle('flex',!!n)}
+function setSt(id,k){const o=O.find(x=>x.id===id);if(o){o.st=ST[k];sv();renderOrders();renderOwner();ordBadge()}}
+function delO(id){O=O.filter(x=>x.id!==id);sv();renderOrders();renderOwner();ordBadge()}
+function own(o){const m=$('#own');m.classList.toggle('hidden',!o);m.classList.toggle('flex',!!o);if(o&&OKP)renderOwner()}
+function unlock(){if($('#pin').value==='1234'){OKP=true;$('#pg').classList.add('hidden');const w=$('#pw');w.classList.remove('hidden');w.classList.add('flex');renderOwner()}else $('#pe').textContent='Wrong PIN'}
+function renderOwner(){const p=O.filter(o=>o.st==='pending'||o.st==='prep').length,d=O.filter(o=>o.st==='done'),r={pending:0,prep:1,done:2,cancel:3};
+$('#os').innerHTML=[['Pending',p],['Completed',d.length],['Sales',rs(d.reduce((a,o)=>a+o.t,0))]].map(x=>`<div class='bg-white rounded-xl p-2 border'><b class='text-maroon text-base'>${x[1]}</b><br>${x[0]}</div>`).join('');
+$('#ol').innerHTML=O.length?O.slice().sort((a,b)=>r[a.st]-r[b.st]).map(o=>ordCard(o,1)).join(''):`<p class='text-sm text-gray-500 text-center py-6'>${t('noo')}</p>`}
+function bill(o){const m=$('#bm');m.classList.toggle('hidden',!o);m.classList.toggle('flex',!!o)}
+function waBill(id){window.open(wa(msgOf(O.find(x=>x.id===id))),'_blank')}
+function showBill(id){const o=O.find(x=>x.id===id);if(!o)return;
+$('#bill').innerHTML=`<div class='text-center border-b border-dashed pb-3'><div class='text-3xl'>🍽️</div><h3 class='font-bold text-maroon text-lg'>${T.en.shop} / ${T.mr.shop}</h3><p class='text-xs text-gray-600'>${t('addr')}</p><p class='text-xs text-gray-600'>📞 +91 99608 42249</p></div><div class='text-xs text-gray-600 py-3 space-y-0.5'><p>Bill No: <b>#SS${o.id}</b></p><p>${new Date(o.ts).toLocaleString('en-IN')}</p><p>${o.nm} • ${o.ph}</p><p>${T.en.ot[o.ty]}${o.ad?' • '+o.ad:''}</p></div><table class='w-full text-xs'><tbody>${o.it.map(i=>`<tr class='border-t'><td class='py-1.5'>${i.n}</td><td>${i.q}×${i.p}</td><td class='text-right font-semibold'>${rs(i.p*i.q)}</td></tr>`).join('')}</tbody></table><div class='border-t border-dashed mt-2 pt-2 text-sm space-y-1'><div class='flex justify-between'><span>Subtotal</span><span>${rs(o.s)}</span></div><div class='flex justify-between'><span>GST 5%</span><span>${rs(o.g)}</span></div><div class='flex justify-between font-bold text-maroon text-base'><span>Total</span><span>${rs(o.t)}</span></div></div><p class='text-center text-xs text-gray-500 mt-3'>धन्यवाद! पुन्हा भेट द्या • Thank you, visit again</p><div class='no-print grid grid-cols-3 gap-2 mt-4 text-xs font-bold'><button onclick='waBill(${o.id})' class='bg-green-600 text-white rounded-xl py-2.5'>WhatsApp</button><button onclick='window.print()' class='bg-orange-50 text-spice rounded-xl py-2.5'>Print</button><button onclick='bill(0)' class='bg-gray-100 rounded-xl py-2.5'>Close</button></div>`;bill(1)}
+const _cu=cartUI;cartUI=function(){_cu();ordBadge()};
+applyText();render();tab(0);
+</script>
+</body>
+</html>
